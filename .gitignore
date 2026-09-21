@@ -1,20 +1,22 @@
 # ============================================================
-# necoocean-vault — 文档仓库 .gitignore
+# necoocean-vault-docs -- 文档仓库 .gitignore
 #
-# 依据：docs/文档规范/仓库形态规范.md v1.2
-#   约束 R1  工作区根不得初始化 git（本仓库根 = 工作区根，故须排除兄弟仓库）
-#   约束 R3  文档仓库根须有 .gitignore 排除两个代码仓库（与采用布局 A/B 无关）
+# 依据：文档规范/仓库形态规范.md v1.2
+#   约束 R3  文档仓库根须有 .gitignore 排除两个代码仓库
+#
+# ! 本文件所在目录即仓库根：docs/
+#   故两个兄弟仓库位于「上一级」，必须用 ../ 前缀
 # ============================================================
 
-# --- 同级代码仓库（各自是独立 git 仓库，不得纳入本仓库）---
-necoocean-tools-backend/
-necoocean-tools-frontend/
+# --- 兄弟代码仓库（各自是独立 git 仓库，不得纳入本仓库）---
+#     物理位置：D:\Data\code\necoocean-tools-{backend,frontend}\
+#     即本仓库根的上一级
+../necoocean-tools-backend/
+../necoocean-tools-frontend/
 
-# --- 工作区私有数据（不进版本控制）---
-.workbuddy/
-
-# --- 临时产物 ---
-.tmp-research/
+# --- 工作区私有数据（位于上一级，不进版本控制）---
+../.workbuddy/
+../.tmp-research/
 
 # --- 操作系统与编辑器噪声 ---
 Thumbs.db
