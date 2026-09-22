@@ -14,7 +14,7 @@
   --line-2:rgba(255,255,255,.14);
   --tx-1:#F2F4F8;
   --tx-2:#9BA3B4;
-  --tx-3:#636B7D;
+  --tx-3:#848CA0;
   --brand:#3E7BFA;
   --brand-dim:#2A5FD4;
   --brand-soft:rgba(62,123,250,.13);
@@ -40,7 +40,7 @@
 [data-theme="light"]{
   --bg-0:#FFFFFF; --bg-1:#F7F8FA; --bg-2:#FFFFFF; --bg-3:#EEF1F6;
   --line-1:rgba(12,18,30,.08); --line-2:rgba(12,18,30,.16);
-  --tx-1:#0D1220; --tx-2:#5A6478; --tx-3:#8A93A6;
+  --tx-1:#0D1220; --tx-2:#5A6478; --tx-3:#646E82;
   --brand:#2A5FD4; --brand-dim:#1E48A8; --brand-soft:rgba(42,95,212,.09);
   /* 浅色主题必须用白色系遮罩：深色遮罩会让深色文字压在深色底上，
      正文对比度跌到 1 附近，等于废掉内容区。 */
@@ -210,8 +210,8 @@ body.has-page-bg .page-bg-veil{background:var(--page-veil)}
   transition:transform .18s var(--ease),background .2s,border-color .2s,box-shadow .25s;
 }
 .btn:active{transform:translateY(1px)}
-.btn-primary{background:var(--brand);color:#fff}
-.btn-primary:hover{background:var(--brand-dim);box-shadow:0 8px 26px -10px color-mix(in srgb,var(--brand) 70%,transparent)}
+.btn-primary{background:var(--brand-dim);color:#fff}
+.btn-primary:hover{filter:brightness(.9);box-shadow:0 8px 26px -10px color-mix(in srgb,var(--brand) 70%,transparent)}
 .btn-ghost{border:1px solid var(--line-2);color:var(--tx-1);background:var(--bg-1)}
 .btn-ghost:hover{background:var(--bg-2);border-color:var(--tx-3)}
 .btn svg{width:15px;height:15px;flex-shrink:0}
