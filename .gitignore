@@ -9,7 +9,7 @@
 # ============================================================
 
 # --- 兄弟代码仓库（各自是独立 git 仓库，不得纳入本仓库）---
-#     物理位置：D:\Data\code\necoocean-tools-{backend,frontend}\
+#     物理位置：necoocean-vault\ 下，与本仓库根 docs\ 同级
 #     即本仓库根的上一级
 ../necoocean-tools-backend/
 ../necoocean-tools-frontend/
